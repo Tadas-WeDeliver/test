@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    DIGITALOCEAN_ACCESS_TOKEN=credentials('do-api-token')
+    DIGITALOCEAN_ACCESS_TOKEN=credentials('digitalocean-api-token')
   }
   stages {
     stage('Install') {
